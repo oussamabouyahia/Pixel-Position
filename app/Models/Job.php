@@ -10,7 +10,7 @@ class Job extends Model
 {
     /** @use HasFactory<\Database\Factories\JobFactory> */
     use HasFactory;
-    function employee():BelongsTo
+    function employer():BelongsTo
     {
         return $this->belongsTo(Employer::class);
     }
